@@ -124,7 +124,6 @@ always@(posedge clk or negedge rst_n)begin
         o_fraction <= 0;
         o_valid <= 0;
     end else if(counter == 6'd16 && valid_sig) begin
-    // end else if(counter == FRACTIONBIT) begin
         o_fraction <= o_fraction_w;
         o_valid <= 1;
     end else begin
